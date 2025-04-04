@@ -67,7 +67,7 @@ section{
 }
 
 #backgroundimg {
-    background-image: url(/img/trabajando.jpeg);
+    background-image: url(../img/trabajando.jpeg);
     background-color: gray; 
     min-height: 100vh;
     background-size: cover;
