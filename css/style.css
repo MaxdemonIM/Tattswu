@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Sailors Tattoo';
+    src: url('../fonts/SailorsTattoo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Shippori Antique';
+    src: url('../fonts/ShipporiAntique-Regular.ttf') format('truetype');
+}
+
+:root{
+    --rojo: #C03221;
+    --mostaza: #D9A441;
+    --verde: #6E7D5F;
+    --marfil: #FAF3E0;
+    --negro: #1C1C1C;
+    --terracota: #D97D54;
+    --azul: #305F72;
+    --crema: #F4E3C1;
+    --negroAzabache: #0A0A0A;
+    --verdeMusgo: #5E665F;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--negro);
+    box-shadow: 1px 1px 10px 0px gray ;
+}
+
+header{
+    background-color: var(--negro);
+}
+
+header a{
+    font-weight: bolder;
+    color: var(--marfil);
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#contacto{
+    background-color: var(--rojo);
+}
+
+header a:hover{
+    background-color: var(--crema);
+    color: var(--negro);
+}
+
+/* primera seccion */
+
+section{
+    background-color: var(--marfil);
+}
+
+#backgroundimg {
+    background-image: url(/img/trabajando.jpeg);
+    background-color: gray; 
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#backgroundimg div{
+    background-color: rgba(0, 0, 0, 0.137);
+    color: var(--marfil);
+}
+
+section h1{
+    font-family: 'Sailors Tattoo', cursive;
+    box-shadow: -10px 0px 10px 0px #575757;
+    border-radius: 3px;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #faf3e0b9;
+    color: var(--negro);
+    padding: 10px;
+}
+
+/* segunda seccion */
+
+#seccion-galeria {
+    background: linear-gradient(
+        rgba(250, 243, 224, 0.8),
+        rgba(244, 227, 193, 0.6)
+    );
+    backdrop-filter: blur(3px);
+}
+
+#item-galeria {
+    margin: 0;
+    transition: transform 0.3s ease;
+    padding: 12px;
+    background-color: var(--marfil);
+    border: 2px solid var(--negro);
+    box-shadow: 4px 4px 0 var(--negro);
+}
+
+#item-galeria:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 0 var(--negro);
+}
+
+#item-galeria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#item-galeria figcaption {
+    color: var(--negro);
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* tercera seccion */
+
+/* Seccion de elementos fixed */
+
+#ig-logo, #mail-logo {
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+}
+
+#ig-logo {
+    bottom: 50px;
+}
+
+#mail-logo {
+    bottom: 110px;
+}
+
+#ig-logo img, #mail-logo img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+#ig-logo img:hover, #mail-logo img:hover {
+    transform: scale(1.1);
+}
+
+#fixed img{
+    background-color: #faf3e0c9 ;
+    box-shadow: 0px 0px 10px 0px #faf3e08a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Seccion de footer */
+
+footer{
+    background-color: var(--negro);
+    color: var(--marfil);
+    padding: 2rem 0;
+}
+
+#horarios-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#horarios-footer h3 {
+    color: var(--mostaza);
+    font-family: 'Sailors Tattoo', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#horarios-footer ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(244, 227, 193, 0.1);
+    border-radius: 5px;
+}
+
+#horarios-footer .dia {
+    color: var(--mostaza);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#horarios-footer .hora {
+    color: var(--crema);
+    font-size: 1rem;
+}
+
+footer p {
+    color: #888;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+}
+
+#map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+} 
