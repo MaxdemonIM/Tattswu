@@ -79,17 +79,24 @@ section{
 #backgroundimg div{
     background-color: rgba(0, 0, 0, 0.137);
     color: var(--marfil);
+    border-radius: 5px;
 }
 
 section h1{
     font-family: 'Sailors Tattoo', cursive;
-    box-shadow: -10px 0px 10px 0px #575757;
+    box-shadow: -1px 0px 10px 0px #575757;
     border-radius: 3px;
     font-size: 2rem;
     font-weight: bolder;
     background-color: #faf3e0b9;
     color: var(--negro);
     padding: 10px;
+}
+
+section p{
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: 100 ;
+    font-size: 1.2rem;
 }
 
 /* segunda seccion */
