@@ -34,10 +34,11 @@ header{
 }
 
 header a{
-    font-weight: bolder;
-    color: var(--marfil);
-    padding: 10px;
-    text-decoration: none;
+    font-family: 'Shippori Antique', sans-serif !important;
+    font-weight: bolder !important;
+    color: var(--marfil) !important;
+    padding: 10px !important;
+    text-decoration: none !important;
 }
 
 nav ul {
@@ -61,8 +62,16 @@ header a:hover{
 }
 
 /* primera seccion */
+section:nth-of-type(odd) {
+    background-color: var(--verdeMusgo);
+}
 
-section{
+section:nth-of-type(even) {
+    background-color: var(--marfil); 
+}
+
+
+section:nth-of-type(2){
     background-color: var(--marfil);
 }
 
@@ -76,7 +85,7 @@ section{
     background-repeat: no-repeat;
 }
 
-#backgroundimg div{
+#backgroundimg div:first-child{
     background-color: rgba(0, 0, 0, 0.137);
     color: var(--marfil);
     border-radius: 5px;
@@ -84,7 +93,6 @@ section{
 
 section h1{
     font-family: 'Sailors Tattoo', cursive;
-    box-shadow: -1px 0px 10px 0px #575757;
     border-radius: 3px;
     font-size: 2rem;
     font-weight: bolder;
@@ -109,7 +117,9 @@ section p{
     backdrop-filter: blur(3px);
 }
 
-#item-galeria {
+#item-figure {
+    width: 300px;
+    height: 300px;
     margin: 0;
     transition: transform 0.3s ease;
     padding: 12px;
@@ -118,24 +128,36 @@ section p{
     box-shadow: 4px 4px 0 var(--negro);
 }
 
-#item-galeria:hover {
+a:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 0 var(--marfil);
+}
+
+#ver-mas:hover {
     transform: scale(1.02);
     box-shadow: 6px 6px 0 var(--negro);
 }
 
-#item-galeria img {
+#item-figure img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
-#item-galeria figcaption {
+#item-figure figcaption {
     color: var(--negro);
     font-family: 'Shippori Antique', sans-serif;
     font-size: 1.2rem;
 }
 
-/* tercera seccion */
+
+#ver-mas{
+    background-color: var(--rojo);
+    color: var(--marfil);
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 1.2rem;
+}
+
 
 /* Seccion de elementos fixed */
 

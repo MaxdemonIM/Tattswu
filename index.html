@@ -18,10 +18,10 @@
                     </figure>
                     <nav class="col-5">
                         <ul class="list-unstyled d-flex justify-content-evenly">
-                            <li class="text-nowrap"><a href="index.html">Inicio</a></li>
-                            <li class="text-nowrap"><a href="sobreMi.html">Sobre mi</a></li>
-                            <li class="text-nowrap"><a href="trabajos.html">Trabajos</a></li>
-                            <li class="text-nowrap"><a id="contacto" href="contacto.html">Contacto</a></li>
+                            <li class="text-nowrap"><a class="btn" href="index.html">Inicio</a></li>
+                            <li class="text-nowrap"><a class="btn" href="sobreMi.html">Sobre mi</a></li>
+                            <li class="text-nowrap"><a class="btn" href="trabajos.html">Trabajos</a></li>
+                            <li class="text-nowrap"><a class="btn" id="contacto" href="contacto.html">Contacto</a></li>
                         </ul>
                     </nav>
             </div>
@@ -30,9 +30,12 @@
     <main>
         <section class="container-fluid">
             <div class="row" id="backgroundimg">
-                <div class="m-5 p-4 col-4  h-25 text-center">
-                    <h1>INGK Tatuajes</h1>
-                    <p>Conservando el legado de la cultura tradicional &#129500;&#8205;&#9792;&#65039;</p>
+                <div class="row d-flex justify-content-between align-items-lg-center m-5 p-3">
+                    <div class="col-6">
+                        <h1 class="text-center">INGK Tatuajes</h1>
+                        <p class="w-5 text-center">Conservando el legado de la cultura tradicional &#129500;&#8205;&#9792;&#65039;</p>
+                    </div>
+                    <video class="col-5" src="media/tradi.mp4" autoplay muted loop></video>
                 </div>
             </div>
         </section>
@@ -51,23 +54,23 @@
                 <!-- Primera fila-->
                 <div class="row justify-content-between mb-4">
                     <div class="col-12 col-lg-3">
-                        <figure id="item-galeria">
-                            <img src="" alt="Tatuaje tradicional" class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Tradicional</figcaption>
+                        <figure id="item-figure">
+                            <img src="img/panteraTradi.jpg" alt="Tatuaje tradicional" class="img-fluid rounded">
+                            <figcaption class="text-center mt-2">Pantera Tradicional</figcaption>
                         </figure>
                     </div>
                     
                     <div class="col-12 col-lg-3">
-                        <figure id="item-galeria">
-                            <img src="" 
+                        <figure id="item-figure">
+                            <img src="img/florAmarillaTradi.jpg" 
                                  alt="Tatuaje black work" 
                                  class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Black Work</figcaption>
+                            <figcaption class="text-center mt-2">Flor Amarilla Tradicional</figcaption>
                         </figure>
                     </div>
                     
                     <div class="col-12 col-lg-3">
-                        <figure id="item-galeria">
+                        <figure id="item-figure">
                             <img src="" 
                                  alt="Tatuaje neo tradicional" 
                                  class="img-fluid rounded">
@@ -79,7 +82,7 @@
                 <!-- Segunda fila (3 imágenes, ocultas en móvil) -->
                 <div class="row justify-content-between d-none d-lg-flex">
                     <div class="col-lg-3">
-                        <figure id="item-galeria">
+                        <figure id="item-figure">
                             <img src="" 
                                  alt="Tatuaje realismo" 
                                  class="img-fluid rounded">
@@ -88,7 +91,7 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <figure id="item-galeria">
+                        <figure id="item-figure">
                             <img src="" 
                                  alt="Tatuaje japonés" 
                                  class="img-fluid rounded">
@@ -97,7 +100,7 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <figure id="item-galeria">
+                        <figure id="item-figure">
                             <img src="" 
                                  alt="Tatuaje tribal" 
                                  class="img-fluid rounded">
@@ -105,9 +108,13 @@
                         </figure>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <a id="ver-mas" href="trabajos.html" class="btn">Ver más</a>
+                </div>
             </div>
         </section>
-    </main>
+        <section id="" class="py-5"></section>
+    </main> 
     <footer>
         <div class="container">
             <div class="row d-flex justify-content-between">
@@ -130,7 +137,7 @@
                 </div>
 
                 <!-- Columna del mapa -->
-                <div class="col-lg-5">
+                <div class="col-lg-5">      
                     <div id="map-container" class="m-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.8456823525275!2d-56.19434302444415!3d-34.91032197284594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cdfae1c6e1%3A0x996abbbe83e8d0a9!2sDurazno%201117%2C%2011100%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1743272662506!5m2!1ses!2suy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
