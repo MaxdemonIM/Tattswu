@@ -9,33 +9,48 @@
     <meta description="Estudio de tattoo INGK de Montevide, en la pagina te podes contactar con un asistente de IA que puede ayudar con las dudas de los clientes, con el estudio por mail o por instagram, ver los trabajos y sobre mi el artista y conocer a la profesional que te atendera">
     <title>INGK Tatuajes</title>
 </head>
-<body>
+<body class="w-100">
     <header>
         <div class="container-fluid">
-                <div class="row justify-content-between align-items-center">
-                    <figure class="col-auto m-4">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <figure class="m-4">
                         <img id="logo" href="index.html" src="img/logoINGKfinal.png" alt="Logo del estudio">
                     </figure>
-                    <nav class="col-5">
-                        <ul class="list-unstyled d-flex justify-content-evenly">
-                            <li class="text-nowrap"><a class="btn" href="index.html">Inicio</a></li>
-                            <li class="text-nowrap"><a class="btn" href="sobreMi.html">Sobre mi</a></li>
-                            <li class="text-nowrap"><a class="btn" href="trabajos.html">Trabajos</a></li>
-                            <li class="text-nowrap"><a class="btn" id="contacto" href="contacto.html">Contacto</a></li>
+                </div>
+                <nav class="col-6 col-md-8">
+                    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarNav">
+                        <ul class="list-unstyled">
+                            <li><a class="btn" href="index.html">Inicio</a></li>
+                            <li><a class="btn" href="sobreMi.html">Sobre mi</a></li>
+                            <li><a class="btn" href="trabajos.html">Trabajos</a></li>
+                            <li><a class="btn" id="contacto" href="contacto.html">Contacto</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
     <main>
         <section class="container-fluid">
             <div class="row" id="backgroundimg">
-                <div class="row d-flex justify-content-between align-items-center m-5 p-3">
-                    <div class="col-6">
+                <div class="row d-flex justify-content-center align-items-center m-0 p-3">
+                    <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
                         <h1 class="text-center">INGK Tatuajes</h1>
-                        <p class="w-3 text-center">Conservando el legado de la cultura tradicional &#129500;&#8205;&#9792;&#65039;</p>
+                        <p class="text-center">Conservando el legado de la cultura tradicional &#129500;&#8205;&#9792;&#65039;</p>
+                        <p class="text-center">
+                            En este espacio, la tinta no es solo pigmento: es expresión, es memoria, es arte vivo. 
+                            Creamos diseños únicos que hablan de vos, de tus historias, de lo que llevás dentro y querés mostrar al mundo. 
+                            Cada línea es precisa, cada sombra pensada, cada obra nace del encuentro entre tu idea y nuestra experiencia. 
+                            Más que un estudio de tatuajes, somos un taller de identidad visual. Bienvenido a donde el arte cobra piel.
+                        </p>
                     </div>
-                    <video class="col-5" src="media/tradi.mp4" autoplay muted loop></video>
+                    <div class="col-12 col-md-6">
+                        <video class="w-100" src="media/tradi.mp4" autoplay muted loop></video>
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,61 +65,55 @@
         </div>
 
         <section id="seccion-galeria" class="py-5">
-            <div class="container">
-                <!-- Primera fila-->
-                <div class="row justify-content-center mb-4">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
                     <div class="col-12 col-lg-3">
                         <figure id="item-figure">
-                            <img src="img/panteraTradi.jpg" alt="Tatuaje tradicional" class="img-fluid rounded">
-                            <figcaption class="text-center m-2">Pantera Tradicional</figcaption>
+                            <img src="img/panteraTradi.jpg" alt="Pantera tatuada estilo tradicional" class="img-fluid rounded">
+
                         </figure>
                     </div>
                     
                     <div class="col-12 col-lg-3">
                         <figure id="item-figure">
                             <img src="img/florAmarillaTradi.jpg" 
-                                 alt="Tatuaje black work" 
+                                 alt="Flor Amarilla" 
                                  class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Flor Amarilla Tradicional</figcaption>
                         </figure>
                     </div>
                     
                     <div class="col-12 col-lg-3">
                         <figure id="item-figure">
-                            <img src="" 
+                            <img src="img/florero.jpeg" 
                                  alt="Tatuaje neo tradicional" 
                                  class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Neo Trad</figcaption>
                         </figure>
                     </div>
                 </div>
 
                 <!-- Segunda fila (3 imágenes, ocultas en móvil) -->
-                <div class="row justify-content-between d-none d-lg-flex">
-                    <div class="col-lg-3">
+                <div class="row justify-content-center d-none d-lg-flex">
+                    <div class="col-12 col-lg-3">
                         <figure id="item-figure">
-                            <img src="" 
-                                 alt="Tatuaje realismo" 
-                                 class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Realismo</figcaption>
+                            <img src="img/fecha.jpeg" 
+                                 alt="Tatuaje de fecha 28 de junio 2020" 
+                                 class="img-fluid">
                         </figure>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-12 col-lg-3">
                         <figure id="item-figure">
-                            <img src="" 
-                                 alt="Tatuaje japonés" 
-                                 class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Japonés</figcaption>
+                            <img src="img/nombre.jpeg" 
+                                 alt="Tatuaje de nombre Benicio" 
+                                 class="img-fluid">
                         </figure>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-12 col-lg-3">
                         <figure id="item-figure">
-                            <img src="" 
-                                 alt="Tatuaje tribal" 
-                                 class="img-fluid rounded">
-                            <figcaption class="text-center mt-2">Tribal</figcaption>
+                            <img src="img/rocola.jpeg" 
+                                 alt="Tatuaje de rocola" 
+                                 class="img-fluid">
                         </figure>
                     </div>
                 </div>
