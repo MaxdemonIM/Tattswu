@@ -38,18 +38,17 @@
         <section class="container-fluid">
             <div id="backgroundimg">
                 <div class="row justify-content-center align-items-center m-0 p-3">
-
-                    <div class="d-flex row justify-content-center col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <div class="d-flex row justify-content-center col-md-12 col-lg-6 w-50 text-center mb-4 mb-lg-0">
                         <h1 class="text-center">INGK</h1>
                         <p class="text-center text-uppercase">Conservando el legado de la cultura tradicional</p>
-                        <p class="text-center w-50">
+                        <p class="text-center">
                             La tinta no es solo pigmento: es expresión, es memoria, es arte vivo. Acá cada diseño nace de una idea tuya, de una historia que querés 
                             marcar para siempre. Traés la inspiración, yo pongo la técnica, el pulso y la pasión. Cada línea es precisa, cada sombra tiene intención. 
                             No es solo un tatuaje —es parte de vos. Bienvenido al lugar donde el arte cobra piel..
                         </p>
                     </div>
-                    <div id="index-video" class="col-12 col-md-6">
-                        <video class="w-100" src="media/tradi.mp4" autoplay muted loop></video>
+                    <div id="index-video" class="col-md-12 w-50 col-lg-6">
+                        <video class="w-100 rounded" src="media/tradi.mp4" autoplay muted loop></video>
                     </div>
                 </div>
             </div>
@@ -65,63 +64,77 @@
         </div>
 
         <section id="seccion-galeria" class="py-5">
-            <h2 class="text-center mb-5">&#128128; Conoce un poco de mis trabajos &#10084;&#65039;</h2>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-12 d-flex justify-content-between align-items-center col-lg-4">
-
-                        <figure id="item-figure">
-                            <img src="img/panteraTradi.jpg" alt="Pantera tatuada estilo tradicional" class="img-fluid rounded">
-
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <figure class="item-figure">
+                            <img src="img/panteraTradi.jpg" 
+                                 alt="Pantera tatuada estilo tradicional" 
+                                 class="img-fluid rounded">
+                            <figcaption>Pantera Tradicional</figcaption>
                         </figure>
                     </div>
-                    
-                    <div class="col-12 col-lg-4">
-                        <figure id="item-figure">
+                    <div class="col">
+                        <figure class="item-figure">
                             <img src="img/florAmarillaTradi.jpg" 
                                  alt="Flor Amarilla" 
                                  class="img-fluid rounded">
+                            <figcaption>Flor Amarilla Tradicional</figcaption>
                         </figure>
                     </div>
-                    
-                    <div class="col-12 col-lg-4">
-                        <figure id="item-figure">
+                    <div class="col">
+                        <figure class="item-figure">
                             <img src="img/florero.jpeg" 
-                                 alt="Tatuaje neo tradicional" 
+                                 alt="Tatuaje de florero" 
                                  class="img-fluid rounded">
+                            <figcaption>Florero Neo Tradicional</figcaption>
                         </figure>
                     </div>
-                </div>
-
-                <!-- Segunda fila (3 imágenes, ocultas en móvil) -->
-                <div class="row justify-content-center d-none d-lg-flex">
-                    <div class="col-12 col-lg-4">
-                        <figure id="item-figure">
+                    <div class="col d-none d-md-block">
+                        <figure class="item-figure">
+                            <img src="img/molotov.jpeg" 
+                                 alt="Tatuaje de un coctel molotov" 
+                                 class="img-fluid rounded">
+                            <figcaption>Cóctel Molotov</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <figure class="item-figure">
                             <img src="img/fecha.jpeg" 
                                  alt="Tatuaje de fecha 28 de junio 2020" 
-                                 class="img-fluid">
+                                 class="img-fluid rounded">
+                            <figcaption>Fecha Lettering</figcaption>
                         </figure>
                     </div>
-
-                    <div class="col-12 col-lg-4">
-                        <figure id="item-figure">
+                    <div class="col d-none d-md-block">
+                        <figure class="item-figure">
                             <img src="img/rocola.jpeg" 
                                  alt="Tatuaje de rocola" 
-                                 class="img-fluid">
+                                 class="img-fluid rounded">
+                            <figcaption>Rocola Tradicional</figcaption>
                         </figure>
                     </div>
-
-                    <div class="col-12 col-lg-4">
-                        <figure id="item-figure">
+                    <div class="col d-none d-md-block">
+                        <figure class="item-figure">
                             <img src="img/nombre.jpeg" 
                                  alt="Tatuaje de nombre Benicio" 
-                                 class="img-fluid">
+                                 class="img-fluid rounded">
+                            <figcaption>Nombre Benicio</figcaption>
                         </figure>
                     </div>
 
+                    <div class="col d-none d-md-block">
+                        <figure class="item-figure">
+                            <img src="img/joaquina.jpeg" 
+                                 alt="Tatuaje de nombre Joaquina" 
+                                 class="img-fluid rounded">
+                            <figcaption>Nombre Joaquina</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center mt-5">
-                    <a id="ver-mas" href="trabajos.html" class="btn">Ver más</a>
+
+                <div class="text-center mt-4">
+                    <a href="trabajos.html" id="ver-mas" class="btn">Ver más</a>
                 </div>
             </div>
         </section>

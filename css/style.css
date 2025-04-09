@@ -105,12 +105,15 @@ section:nth-of-type(even) {
 }
 
 h1{
-    text-transform: uppercase;
     font-family: 'roboto slab', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
     color: var(--blanco);
     font-size: 2.5rem;
-    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
     padding: 10px;
+    max-width: 100px;
 }
 
 h2{
@@ -129,9 +132,22 @@ section p{
 
 /* segunda seccion */
 
+#seccion-galeria {
+    background: linear-gradient(
+        rgba(250, 243, 224, 0.8),
+        rgba(244, 227, 193, 0.6)
+    );
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+}
 
-#item-figure {
-    width: 300px;
+#seccion-galeria .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-figure {
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 12px;
@@ -141,44 +157,57 @@ section p{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: all 0.3s ease;
 }
 
-#item-figure img {
+.item-figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 0 var(--negro);
+}
+
+.item-figure img {
+    width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
+    border-radius: 4px;
 }
 
-a:hover {
-    background-color: var(--negro);
+.item-figure figcaption {
+    text-align: center;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 1rem;
+    padding: 4px;
+    background-color: var(--marfil);
+    border-radius: 4px;
 }
-
 
 #ver-mas {
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 20px;
     background-color: var(--rojo);
     color: var(--crema) !important;
     font-family: 'Shippori Antique', sans-serif !important;
     font-size: .8rem !important;
     text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-
+#ver-mas:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
 @media (max-width: 767px) {
-    #seccion-galeria .container-fluid {
+    #seccion-galeria .container {
         padding: 0 1rem;
     }
+}
 
-    #seccion-galeria .row {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    #item-figure {
-        width: 100%;
-        max-width: 300px;
-    }
+@media (min-width: 768px) {
+    /* Estilos específicos para escritorio si son necesarios,
+       pero la gestión del tamaño ya la hace Bootstrap */
 }
 
 /* Seccion de elementos fixed */
