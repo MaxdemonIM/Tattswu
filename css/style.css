@@ -20,6 +20,7 @@
     --crema: #F4E3C1;
     --negroAzabache: #0A0A0A;
     --verdeMusgo: #5E665F;
+    --dorado: #D9A441;
 }
 
 #logo{
@@ -51,18 +52,10 @@ header a{
     color: var(--blanco);
 }
 
-header a{
-    
-}
-
 header a:hover{
     background-color: var(--negro);
     color: var(--blanco);
 }
-
-
-/* primera seccion */
-
 
 section:nth-of-type(odd) {
     background-color: var(--blanco);
@@ -72,18 +65,11 @@ section:nth-of-type(even) {
     background-color: var(--negro); 
 }
 
-.container-fluid {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    overflow-x: hidden;
-}
 
-.row {
-    margin-right: 0;
-    margin-left: 0;
-    overflow-x: hidden;
-}
+
+/* primera seccion */
+
+
 
 #backgroundimg {
     background-image: url('../img/trabajando.jpeg');
@@ -110,10 +96,10 @@ h1{
     font-weight: bolder;
     color: var(--blanco);
     font-size: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(14, 14, 14, 0.808);
+    margin-bottom: 15vh;
     border-radius: 10px;
     padding: 10px;
-    max-width: 100px;
 }
 
 h2{
@@ -122,6 +108,10 @@ h2{
     font-weight: 800 ;
     font-size: 1.5rem;
     color: var(--marfil);
+}
+
+section p:first-of-type{
+    color: var(--dorado);
 }
 
 section p{
