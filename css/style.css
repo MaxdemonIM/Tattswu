@@ -72,7 +72,7 @@ section:nth-of-type(even) {
 
 
 #backgroundimg {
-    background-image: url('../img/trabajando.jpeg');
+    background-image: url('../img/trabajando.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
